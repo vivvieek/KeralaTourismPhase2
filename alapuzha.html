@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alapuzha District</title>
+    <!-- Linking bootstrap and stylesheet and JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="styles/popup.js"></script>
+</head>
+<body class="alapuzha">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 p-2 text-dark">
+        <div class="container-fluid">
+    
+            <!-- Logos -->
+            <img src="images/Logo.png" height="65px" width="85px" alt="Logo1">
+            <a href="index.html"><img src="images/Logo2.png" height="65px" width="80px" alt="Logo2"></a>
+    
+            <!-- Navigating bars -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="districtpage.html">Explore Districts</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="login.html">LogIn</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="signup.html">SignUp</a>
+                </li>
+            </ul>
+    
+            <!-- search form -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark bg-white" type="submit" onclick="search()">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigator of districts-->
+    <div class="row row-md-12 text-center mt-4">
+        <p id="distnav">| <a href="trivandrum.html">Thiruvananthapuram</a> |
+            <a href="kollam.html">Kollam</a> | 
+            <a href="pathanamthitta.html">Pathanamthitta</a> | 
+            <a href="alapuzha.html">Alappuzha</a> | 
+            <a href="kottayam.html">Kottayam</a> | 
+            <a href="#" onclick="districts()">Idukki</a> | 
+            <a href="#" onclick="districts()">Ernakulam</a> | 
+            <a href="#" onclick="districts()">Thrissur</a> | 
+            <a href="#" onclick="districts()">Palakkad</a> | 
+            <a href="#" onclick="districts()">Malappuram</a> | 
+            <a href="#" onclick="districts()">Kozhikode</a> | 
+            <a href="#" onclick="districts()">Wayanad</a> | 
+            <a href="#" onclick="districts()">Kannur</a> | 
+            <a href="#" onclick="districts()">Kasargod</a> |
+        </p>
+    </div>
+    <h3 class="heading"><u>Alappuzha</u></h3>
+
+
+    <!-- body of district -->
+    <div class="container" id="districtboxfull">
+        <div class="row">
+            <!-- picture of district -->
+            <div class="col col-md-6" id="districtboxphoto">
+                <img src="images/aleppy montage.png" alt="alpymontage" height="650px" width="450">
+                <p class="descri bg-dark bg-opacity-50">Clockwise from top: Alappuzha houseboat, Alappuzha Beach, Boat Jetty, Roman Catholic Diocese of Alleppey, Jain temple, Mullakkal Temple, Government College of Nursing</p>
+            </div>
+            <!-- intro about district -->
+            <div class="col col-md-6" id="districtdescrip">
+                <p class="descri bg-dark bg-opacity-50">
+                    <b>Alappuzha</b> or <b>Alleppey</b> ([ɐːlɐpːuɻɐ]) is the administrative headquarters of Alappuzha district in state of Kerala, India.<br>
+                    <b>The Backwaters of Alappuzha</b> are one of the most popular tourist attractions in India which attracts millions of domestic and international tourists.<br>
+                    Alleppey is a city and a municipality in Kerala with an urban population of 174,164 and ranks third among the districts in literacy rate in the state.<br>
+                    In 2016, the Centre for Science and Environment rated Alappuzha as the <b>cleanest town in India</b>.<br>
+                    Alappuzha is considered to be the oldest planned city in this region and the lighthouse built on the coast of the city is the first of its kind along the Laccadive Sea coast.<br>
+                    It is an important tourist destination in India. It connects Kumarakom and Cochin to the North and Kollam to the South.<br>
+                    It is also the access point for the annual <b>Nehru Trophy Boat Race</b>, held on the Punnamada Lake, near Alappuzha, on the <b>second Saturday of August</b> every year. This is amongst the most popular and competitive boat races in India.<br>
+                    The economy of the district is based on agriculture and marine products. The agricultural activities predominantly revolve around the Kuttanad region, the rice bowl of Kerala.<br>
+                    Alappuzha is globally famous for snake boat races, especially the Nehru Trophy Boat Race held in the Punnamada Lake near Alappuzha. In 1952, when Jawaharlal Nehru, the first prime minister of India, visited Kerala, the people of Alleppey decided to give a special entertainment for their prestigious guest and conducted a snake boat race. 
+                </p>
+            </div>
+        </div>
+        <div class="row row mt-5 mb-5">
+            <!--  details of tourist spots -->
+            <div class="col" id="spotdescr">
+                <div class="descri bg-dark bg-opacity-50">
+                    <h5>Some of the main attractions of Alappuzha are</h5>
+                    <ul>
+                        <li><u>Aleppy Beach</u></li>
+                        <p>Alappuzha Beach is a beach in Alappuzha town and a tourist attraction in Kerala, India. Beach has an old pier which extend to sea is over <b>150 years old</b>. Alappuzha beach host many events annually like Alappuzha <b>beach festival, Sand art festival</b> and many more.</p>
+                        <li><u>Mannarasala Sree Nagaraja Temple</u></li>
+                        <p><b>Mannarasala Sree Nagaraja Temple (Malayalam: മണ്ണാറശാല ശ്രീ നാഗരാജാക്ഷേത്രം)</b> in Haripad is a very ancient and internationally known centre of pilgrimage for the devotees of serpent gods (Nagaraja). The famous Nagaraja temple "Mannarasala" in Haripad is nestled in a forest glade, like most snake temples. The Mannarasala
+                             Temple has over 100,000 images of snakes along the paths and among the trees, and is the largest such temple in Kerala, India.</p>
+                        <li><u>International Coir Museum</u></li>
+                        <p> Coir Board had established an International Coir Museum in the Diamond Jubilee year, by depicting the historical events and evolution of technological advancements made in Coir Sector. The International Coir Museum is established for showcasing 
+                            the coir industry over the ages with the latest developments which has brought in a revolution. This museum is a beauty spot in the tourist map of Alleppey. The museum also show cases the traditional processes and development of coir industry, including retting and fibre extraction, advent of mechanization in coir sector etc.</p>
+                        <li><u>Vembanad Lake</u></li>
+                        <p>Vembanad is the <b>longest lake</b> in India, as well as the <b>largest lake</b> in the state of Kerala. The lake has an area of 230 square kilometers and a maximum length of 96.5 km.</p>
+                        <li><u>Basilica of St. Mary</u></li>
+                        <p><b>Champakulam Kalloorkadu St. Mary's Basilica</b> is an ancient Christian Church in Kerala. It belongs to the Syro-Malabar Church under the Archeparchy of Changanacherry. It is a Forane church, with several parishes under it.</p>
+                    </ul>
+                </div>
+            </div>
+            <!-- carousel of tourist spots-->
+            <div class="col" id="districtcar">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" >
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/aleppybeach.jpg" class="d-block w-100" alt="aleppy beach" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Aleppy Beach</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/mannarasala-sree-nagaraja.jpg" class="d-block w-100" alt="mannarasala" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Mannarasala Sree Nagaraja Temple</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/coir museum.jpg" class="d-block w-100" alt="coir Museum" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>International Coir Museum</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/vembanat lake.jpg" class="d-block w-100" alt="Vembanad" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Vembanad Lake</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/stmarys.jpg" class="d-block w-100" alt="stmarys" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Basilica of St. Mary</h5>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+
+    <!-- footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 bg-white bg-opacity-50 text-dark-50">
+        <div class="foot container text-center">
+            <img src="images/keralagovtlogo.png" alt="Keralagovtlogo" height="65px" width="85px">
+            <p >
+            <small>All rights reserved &copy; Kerala Tourism 2023<br>
+                Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033<br>
+                Phone: +91 471 2321132, Fax: +91 471 2322279, E-mail: info@keralatourism.org.<br>
+                Toll free No: 1-800-425-4747<br>
+                <a href="#" onclick="popup()">Copyright</a>|
+                <a href="#" onclick="popup()">Terms of Use</a>|
+                <a href="#" onclick="popup()">Cookie Policy</a>|
+                <a href="#" onclick="popup()">Contact Us</a>
+            </small>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

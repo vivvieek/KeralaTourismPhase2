@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kollam District</title>
+    <!-- Linking bootstrap and stylesheet and JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="styles/popup.js"></script>
+</head>
+<body class="kollam">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 p-2 text-dark">
+        <div class="container-fluid">
+    
+            <!-- Logos -->
+            <img src="images/Logo.png" height="65px" width="85px" alt="Logo1">
+            <a href="index.html"><img src="images/Logo2.png" height="65px" width="80px" alt="Logo2"></a>
+    
+            <!-- Navigating bars -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="districtpage.html">Explore Districts</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="login.html">LogIn</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="signup.html">SignUp</a>
+                </li>
+            </ul>
+    
+            <!-- search form -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark bg-white" type="submit" onclick="search()">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigator of districts-->
+    <div class="row row-md-12 text-center mt-4">
+    <p id="distnav">| <a href="trivandrum.html">Thiruvananthapuram</a> |
+        <a href="kollam.html">Kollam</a> | 
+        <a href="pathanamthitta.html">Pathanamthitta</a> | 
+        <a href="alapuzha.html">Alappuzha</a> | 
+        <a href="kottayam.html">Kottayam</a> | 
+        <a href="#" onclick="districts()">Idukki</a> | 
+        <a href="#" onclick="districts()">Ernakulam</a> | 
+        <a href="#" onclick="districts()">Thrissur</a> | 
+        <a href="#" onclick="districts()">Palakkad</a> | 
+        <a href="#" onclick="districts()">Malappuram</a> | 
+        <a href="#" onclick="districts()">Kozhikode</a> | 
+        <a href="#" onclick="districts()">Wayanad</a> | 
+        <a href="#" onclick="districts()">Kannur</a> | 
+        <a href="#" onclick="districts()">Kasargod</a> |
+    </p>
+    </div>
+    <h3 class="heading"><u>Kollam</u></h3>
+
+    <!-- body of district -->
+    <div class="container" id="districtboxfull">
+        <div class="row">
+            <!-- picture of district -->
+            <div class="col col-md-6" id="districtboxphoto">
+                <img src="images/kollammontage.jpg" alt="klmmontage" height="550px" width="350px">
+                <p class="descri bg-dark bg-opacity-50">From top clockwise: RP Mall, Tangasseri Lighthouse, British Residency, Kollam Junction railway station, Ashtamudi Lake, Kollam Port, Asramam Adventure Park, Chinnakada Clock Tower</p>
+            </div>
+            <!-- intro about district -->
+            <div class="col col-md-6" id="districtdescrip">
+                <p class="descri bg-dark bg-opacity-50">
+                    <b>Kollam</b> ([kolːɐm]), also known by its former name <b>Quilon</b>, is an ancient seaport and city on the Malabar Coast of India bordering the Laccadive Sea, which is a part of the Arabian Sea.<br>
+                    The city is on the banks of <b>Ashtamudi Lake</b> and <b>the Kallada river</b>. Kollam is the fourth largest city in Kerala and is known for <b>cashew processing</b> and <b>coir manufacturing</b>.<br>
+                    It is the southern gateway to the Backwaters of Kerala and is a prominent tourist destination.<br>
+                    <u>Kollam has a strong commercial reputation since ancient times. The Arabs, Phoenicians, Chinese, Ethiopians, Syrians, Jews, Chaldeans and Romans have all engaged in trade at the port of Kollam for millennia. As a result of Chinese trade, Kollam was mentioned by Ibn Battuta in the 14th century as one of the five Indian ports he had seen during the course of his twenty-four-year travels.</u><br>
+                    As of the 2011 India census, Kollam city had a population of 349,033 with a density of 5,400 persons per square kilometre.<br>
+                    There are so many <b>ancient temples, centuries-old churches and mosques</b> in the city and its suburbs.<br>
+                    Kollam is famous as a city with excellent export background.<br>
+                    <b>Kollam Fest</b> is Kollam's own annual festival, attracting mostly Keralites but also hundreds of domestic and foreign tourists to Kollam. The main venue of Kollam Fest is the historic and gigantic <b>Ashramam Maidan</b>. Kollam Fest is the signature event of Kollam. Kollam Fest seeks to showcase Kollam's rich culture and heritage, tourism potential and investments in new ventures. 
+                </p>
+            </div>
+        </div>
+        <div class="row row mt-5 mb-5">
+            <!--  details of tourist spots -->
+            <div class="col" id="spotdescr">
+                <div class="descri bg-dark bg-opacity-50">
+                    <h5>Some of the main attractions of Kollam are</h5>
+                    <ul>
+                        <li><u>Jatayu Earth's Center</u></li>
+                        <p>Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala. It stands at an altitude of 350m above the mean sea level. Jatayu Nature Park holds the distinction of having the world’s largest bird sculpture, which is of Jatayu</p>
+                        <li><u>Palaruvi Waterfalls</u></li>
+                        <p>Palaruvil is a tiny village in Kollam district, Kerala in South India. Palaruvi falls is situated in Palaruvi and Palaruvi is famous for Palaruvi waterfalls.</p>
+                        <li><u>Ashtamudi Lake</u></li>
+                        <p>Ashtamudi Lake, in the Kollam District of the Indian state of Kerala, is the most visited backwater and lake in the state. It possesses a unique wetland ecosystem and a large palm-shaped water body, second only in size to the Vembanad estuary ecosystem of the state.</p>
+                        <li><u>Infant Jesus Cathedral</u></li>
+                        <p>The Infant Jesus Cathedral is a historic Roman Catholic church established by Portuguese during 1614, situated at Tangasseri in the city of Quilon, India. It is now the cathedral i.e the Seat of the Bishop of Roman Catholic Diocese of Quilon, the ancient and first catholic diocese of India.</p>
+                        <li><u>Neendakara Port</u></li>
+                        <p>Fishing harbours are home to visuals that few city dwellers tend to experience in their lifetime. 8 km from Kollam is located the magnificent Neendakara Fishing Harbour. From Neendakara Bridge, one gets a beautiful vantage point to view the confluence of the Ashtamudi Lake and the sea. As the sun sets, let the cool breeze and the Chinese Fishing Nets help you cool off and welcome in the darkening sky. It is a wonderful way to soak in the final visuals of the day.</p>
+                    </ul>
+                </div>
+            </div>
+            <!-- carousel of tourist spots-->
+            <div class="col" id="districtcar">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" >
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/jatayu.jpg" class="d-block w-100" alt="jatayu" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Jatayu Earth's Center</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/Palaruvi_Waterfall.jpg" class="d-block w-100" alt="palaruvi" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Palaruvi Waterfalls</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Ashtamudi_Kerala.jpg" class="d-block w-100" alt="Ashtamudi" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Ashtamudi Lake</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Infant_jesus_cathedral_tangasseri.jpg" class="d-block w-100" alt="infantjesuscathedral" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Infant Jesus Cathedral</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/neendakara.jpg" class="d-block w-100" alt="neendakara" height="400px" width="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Neendakara Port</h5>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- footer -->
+    <footer id="sticky-footer" class="flex-shrink-0 bg-white bg-opacity-50 text-dark-50">
+        <div class="foot container text-center">
+            <img src="images/keralagovtlogo.png" alt="Keralagovtlogo" height="65px" width="85px">
+            <p >
+            <small>All rights reserved &copy; Kerala Tourism 2023<br>
+                Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033<br>
+                Phone: +91 471 2321132, Fax: +91 471 2322279, E-mail: info@keralatourism.org.<br>
+                Toll free No: 1-800-425-4747<br>
+                <a href="#" onclick="popup()">Copyright</a>|
+                <a href="#" onclick="popup()">Terms of Use</a>|
+                <a href="#" onclick="popup()">Cookie Policy</a>|
+                <a href="#" onclick="popup()">Contact Us</a>
+            </small>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Wallpapers */
+.home{
+    background-image: url(/vivekprojectonetourism/images/Homepage.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.login{
+    background-image: url(/vivekprojectonetourism/images/Loginpage.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.signup{
+    background-image: url(/vivekprojectonetourism/images/signuppage.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.district{
+    background-image: url(/vivekprojectonetourism/images/Districtpage.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.trivandrum{
+    background-image: url(/vivekprojectonetourism/images/trivandrumwallpaper.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.kollam{
+    background-image: url(/vivekprojectonetourism/images/Kollam.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.alapuzha{
+    background-image: url(/vivekprojectonetourism/images/alepybackg.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.pathanamthitta{
+    background-image: url(/vivekprojectonetourism/images/pathanambackg.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.kottayam{
+    background-image: url(/vivekprojectonetourism/images/kottayambg.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+
+/* Search icon hover*/
+.btn:hover{
+    color: white !important;
+    background-color: black !important;
+
+}
+/* forgotpassword */
+.forgot{
+    float: right;
+    color: blueviolet;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* loginbutton */
+#btnlg{
+    width: 100%;
+}
+
+/* Loginform */
+.loginform{
+    margin-top: 80px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* background-color: white; */
+}
+
+/* loginphoto */
+#kathakali{
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 5px solid white;
+}
+
+/* signupform */
+#signupform{
+    margin: 40px;
+    padding: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#signupgrid{
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+/* carousels */
+#carouselExampleCaptions{
+    margin: 20px 150px;
+    padding: 10px;
+    border: 10px solid whitesmoke;
+    border-radius: 30px;
+}
+
+/* carousel texts */
+.carousel-inner p{
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    opacity: 75%;
+}
+.carousel-inner h5{
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    opacity: 75%;
+}
+
+/* homepage title */
+.headhome{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* district card title */
+.districtcardtitle{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.districtcardtitle :hover{
+    color: brown;
+    transition: 0.3s;
+    font-size: 150%;
+}
+
+
+/* district navigation */
+#distnav a{
+    text-decoration: none;
+    color: beige;
+}
+#distnav>a:hover{
+    color: rgb(23, 180, 89);
+}
+
+
+/* districts */
+#districtboxfull{
+    /* border: 1px solid green; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#districtboxphoto{
+    font-size: x-small;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    color: beige;
+    text-align: center;
+}
+#districtdescrip{
+    font-size: small;
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+    padding-top: 70px;
+    color: beige;
+    text-align: center;
+}
+#districtcar{
+    /* border: 1px solid yellow; */
+    padding-top: 70px;
+}
+#spotdescr{
+    font-size: small;
+    /* padding-top: 100px; */
+    /* border: 1px solid black; */
+    color: beige;
+}
+/* heading for district */
+.heading{
+    color: white;
+    text-align: center;
+}
