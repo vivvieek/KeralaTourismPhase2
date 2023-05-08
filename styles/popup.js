@@ -28,10 +28,9 @@ var flag=false;
 var flag1=true;
 var flag2=true;
 
-function validate(){
-    
+function validate(){   
     if(email.value==''){
-        erremail.innerText='Email cant be empty!'
+        erremail.innerText='Email cant be empty !'
         erremail.style.color='red';
         erremail.style.background='white';
     }
@@ -48,7 +47,7 @@ function validate(){
     }
 
     if(passwrd.value=='' && passwrd.value.length<8){
-        errpass.innerText="Password cant be empty";
+        errpass.innerText="Password cant be empty !";
         errpass.style.background='white';
         errpass.style.color='red';
     }
@@ -63,68 +62,7 @@ function validate(){
         errpass.style.color='red';
         flag2=false;
     }
-
     if(flag1 && flag2)
         flag=true;
     return flag;
-}
-
-// signuppage validation
-
-var fname=document.getElementById('firstname');
-var lname=document.getElementById('lastname');
-var emnew=document.getElementById('inputemail');
-var numnew=document.getElementById('inputnumber');
-var passn=document.getElementById('passnew');
-var passre=document.getElementById('reentpass');
-
-var erfname=document.getElementById('fisname');
-var erlname=document.getElementById('lasname');
-var eremnew=document.getElementById('emaile');
-var ernumnew=document.getElementById('nume');
-var erpassn=document.getElementById('pasnew');
-var erpassre=document.getElementById('repas');
-
-let regex_fname=/^([A-Za-z]+)$/
-let regex_lname=/^([A-Za-z]+)$/
-let regex_emnew=/^([A-Za-z0-9\-#_.]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
-let regex_numnew=/^([0-9]+)$/
-let regex_passn=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/;
-let regex_passre=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/;
-
-
-function validatedata(){
-    if(fname.value==''){
-        erfname.innerText="Can't be empty";
-        erfname.style.background='white';
-        erfname.style.color='red';
-    }
-    else if(regex_fname.test(fname.value)){
-        erfname.innerText="Valid Format";
-        erfname.style.background='white';
-        erfname.style.color='green';
-    }
-    else{
-        erfname.innerText="Invalid Format";
-        erfname.style.background='white';
-        erfname.style.color='red';
-        return false;
-    }
-
-    if(lname.value==''){
-        erlname.innerText="Can't be empty";
-        erlname.style.background='white';
-        erlname.style.color='red';
-    }
-    else if(regex_lname.test(lname.value)){
-        erlname.innerText="Valid Format";
-        erlname.style.background='white';
-        erlname.style.color='green';
-    }
-    else{
-        erlname.innerText="Invalid Format";
-        erlname.style.background='white';
-        erlname.style.color='red';
-    }
-
 }

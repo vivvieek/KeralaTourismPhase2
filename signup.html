@@ -53,24 +53,24 @@
 
     <!-- signup form -->
     <div class="signuppage bg-black bg-opacity-50" id="signupgrid">
-      <form class="row g-1 bg-white bg-opacity-50" id="signupform" action="#" onsubmit="return validatedata()">
+      <form class="row g-1 bg-white bg-opacity-50" id="signupform" action="">
 
         <div class="col-md-6">
           <label for="firstname" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstname" placeholder="First name">
+          <input type="text" class="form-control" id="firstname" placeholder="First name"><br>
           <span id="fisname"></span>
         </div>
 
         <div class="col-md-6">
           <label for="lastname" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastname" placeholder="Last name">
+          <input type="text" class="form-control" id="lastname" placeholder="Last name"><br>
           <span id="lasname"></span>
         </div>
 
         <div class="col-md-6">
           <label for="inputemail" class="form-label">Email</label>
-          <input type="text" class="form-control" id="inputemail" placeholder="abc@abc.com">
-          <span id="emaile">hi</span>
+          <input type="text" class="form-control" id="inputemail" placeholder="abc@abc.com"><br>
+          <span id="emaile"></span>
         </div>
 
         <div class="col-md-2">
@@ -84,20 +84,21 @@
 
         <div class="col-md-4">
           <label for="inputnumber" class="form-label">Phone number</label>
-          <input type="tel" class="form-control" id="inputnumber" placeholder="999-999-9999">
-          <span id="nume">hi</span>
+          <input type="text" class="form-control" id="inputnumber" placeholder="999 999 9999"><br>
+          <span id="nume"></span>
         </div>
 
         <div class="col-md-6">
           <label for="passnew" class="form-label">New Password</label>
-          <input type="password" class="form-control" id="passnew" placeholder="Enter Password">
-          <span id="pasnew">hi</span>
+          <input type="password" class="form-control" id="passnew" placeholder="Enter Password"><br>
+          <span id="pasnew"></span>
+          <span id="strength"></span>
         </div>
 
         <div class="col-md-6">
           <label for="reentpass" class="form-label">Re-enter Password</label>
-          <input type="password" class="form-control" id="reentpass" placeholder="Re-enter Password">
-          <span id="repas">hi</span>
+          <input type="password" class="form-control" id="reentpass" placeholder="Re-enter Password"><br>
+          <span id="repas"></span>
         </div>
 
         <div class="col-12">
@@ -110,7 +111,7 @@
         </div>
 
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign Up</button>
+          <button type="submit" class="btn btn-primary" onclick="return validatedata()">Sign Up</button>
         </div><br>
         <div class="already float-right">Already have an account? <a href="login.html">Login here</a></div>
       </form>
@@ -135,6 +136,7 @@
     </footer>
 
     <script src="styles/popup.js"></script>
+    <script src="styles/signup.js"></script>
 
 </body>
 </body>
