@@ -22,7 +22,7 @@ var erremail=document.getElementById("erroremail");
 var errpass=document.getElementById("errorpassword");
 
 let regex_el=/^([A-Za-z0-9\-#_.]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
-let regex_pl=/^([A-Za-z0-9]+)$/
+let regex_pl=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/
 
 var flag=false;
 var flag1=true;
@@ -89,8 +89,8 @@ let regex_fname=/^([A-Za-z]+)$/
 let regex_lname=/^([A-Za-z]+)$/
 let regex_emnew=/^([A-Za-z0-9\-#_.]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/
 let regex_numnew=/^([0-9]+)$/
-// let regex_passn=
-// let regex_passre=
+let regex_passn=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/;
+let regex_passre=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/;
 
 
 function validatedata(){
@@ -108,6 +108,7 @@ function validatedata(){
         erfname.innerText="Invalid Format";
         erfname.style.background='white';
         erfname.style.color='red';
+        return false;
     }
 
     if(lname.value==''){

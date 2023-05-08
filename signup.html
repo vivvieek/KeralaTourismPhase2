@@ -53,7 +53,7 @@
 
     <!-- signup form -->
     <div class="signuppage bg-black bg-opacity-50" id="signupgrid">
-      <form class="row g-1 bg-white bg-opacity-50" id="signupform" action="">
+      <form class="row g-1 bg-white bg-opacity-50" id="signupform" action="#" onsubmit="return validatedata()">
 
         <div class="col-md-6">
           <label for="firstname" class="form-label">First Name</label>
@@ -110,7 +110,7 @@
         </div>
 
         <div class="col-12">
-          <button type="submit" class="btn btn-primary" onclick="return validatedata()">Sign Up</button>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
         </div><br>
         <div class="already float-right">Already have an account? <a href="login.html">Login here</a></div>
       </form>
