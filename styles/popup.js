@@ -35,12 +35,12 @@ function validate(){
         erremail.style.background='white';
     }
     else if(regex_el.test(email.value)){
-        erremail.innerText="Valid format";
+        erremail.innerText="Valid Email";
         erremail.style.color='green';
         erremail.style.background='white';
     }
     else{
-        erremail.innerText="Invalid format";
+        erremail.innerText="Invalid Email";
         erremail.style.color='red';
         erremail.style.background='white';
         flag1=false;

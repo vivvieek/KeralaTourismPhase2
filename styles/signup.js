@@ -6,7 +6,7 @@ function validateName(){
     var regex=/^[a-zA-Z]{2,}$/; // regular expression to match letters only
     var erfname=document.getElementById('fisname');
     if(Name==''){
-        erfname.innerText="Can't be empty";
+        erfname.innerText="Field can't be empty !";
         erfname.style.background='white';
         erfname.style.color='red';
     }
@@ -29,7 +29,7 @@ function validateName2(){
     var regex=/^[a-zA-Z]{2,}$/; // regular expression to match letters only
     var ersname=document.getElementById('lasname');
     if(Name2==''){
-        ersname.innerText="Can't be empty";
+        ersname.innerText="Field can't be empty !";
         ersname.style.background='white';
         ersname.style.color='red';
     }
@@ -52,7 +52,7 @@ function validateEmail(){
     var regex_em=/^[^\s@]+@[^\s@]+\.[^\s@]+$/; // regular expression to match email format
     var ermail=document.getElementById('emaile');
     if(email==''){
-        ermail.innerText="Can't be empty";
+        ermail.innerText="Field can't be empty";
         ermail.style.background='white';
         ermail.style.color='red';
     }
@@ -75,12 +75,12 @@ function validatePhoneNumber(){
     var regex_num=/^[0-9]{10}$/; // regular expression to match phone number format
     var number=document.getElementById('nume');
     if(phoneNumber==''){
-        number.innerText="can't be empty";
+        number.innerText="Field can't be empty !";
         number.style.background='white';
         number.style.color='red';
     }
     else if(!regex_num.test(phoneNumber)){
-        number.innerText="Please enter a valid number";
+        number.innerText="Please enter a valid phone number";
         number.style.background='white';
         number.style.color='red';
     }
@@ -99,12 +99,12 @@ function validatePassword(){
     var pass=document.getElementById('pasnew');
     var str=document.getElementById('strength');
     if(password==''){
-        pass.innerText="can't be empty";
+        pass.innerText="Field can't be empty !";
         pass.style.background='white';
         pass.style.color='red';
     }
     else if(!regex_pas.test(password)){
-        pass.innerText="Must contain Min. 8 chars with atleast one uppercase, one lower case and one number";
+        pass.innerText="Must contain Min. 8 chars with atleast one uppercase, lower case and a number";
         pass.style.background='white';
         pass.style.color='red';
     } else {
@@ -116,15 +116,15 @@ function validatePassword(){
     // check password strength and set the input background color accordingly
     if(password.length>=12 && /[A-Z]/.test(password) && /[a-z]/.test(password) && /\d/.test(password)){
         str.style.backgroundColor='green';
-        str.innerText="strong";
+        str.innerText="Strong";
     }
     else if(password.length>=8 && /[A-Z]/.test(password) && /[a-z]/.test(password) && /\d/.test(password)){
         str.style.backgroundColor='orange';
-        str.innerText="medium";
+        str.innerText="Medium";
     }
     else{
         str.style.backgroundColor = 'red';
-        str.innerText="weak";
+        str.innerText="Weak";
     }
 }
 
@@ -139,7 +139,7 @@ function repeatvalidate(){
     const password=passwordInput.value.trim();
 
     if(passwordre==''){
-        passre.innerText="Can't be empty"
+        passre.innerText="Field can't be empty !"
         passre.style.background='white';
         passre.style.color='red';
     }
@@ -149,7 +149,7 @@ function repeatvalidate(){
         passre.style.color='green';
     }
     else{
-        passre.innerText="password do not match"
+        passre.innerText="Password do not match"
         passre.style.background='white';
         passre.style.color='red';
     }
