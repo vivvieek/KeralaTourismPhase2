@@ -4,47 +4,47 @@
 }
 /* Wallpapers */
 .home{
-    background-image: url(/vivekprojectonetourism/images/Homepage.jpg);
+    background-image: url(/images/Homepage.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .login{
-    background-image: url(/vivekprojectonetourism/images/Loginpage.jpg);
+    background-image: url(/images/Loginpage.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .signup{
-    background-image: url(/vivekprojectonetourism/images/signuppage.jpg);
+    background-image: url(/images/signuppage.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .district{
-    background-image: url(/vivekprojectonetourism/images/Districtpage.jpg);
+    background-image: url(/images/Districtpage.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .trivandrum{
-    background-image: url(/vivekprojectonetourism/images/trivandrumwallpaper.jpg);
+    background-image: url(/images/trivandrumwallpaper.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .kollam{
-    background-image: url(/vivekprojectonetourism/images/Kollam.jpg);
+    background-image: url(/images/Kollam.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .alapuzha{
-    background-image: url(/vivekprojectonetourism/images/alepybackg.jpg);
+    background-image: url(/images/alepybackg.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .pathanamthitta{
-    background-image: url(/vivekprojectonetourism/images/pathanambackg.jpg);
+    background-image: url(/images/pathanambackg.jpg);
     background-size: cover;
     background-position: fixed;
 }
 .kottayam{
-    background-image: url(/vivekprojectonetourism/images/kottayambg.jpg);
+    background-image: url(/images/kottayambg.jpg);
     background-size: cover;
     background-position: fixed;
 }
